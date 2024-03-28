@@ -17,16 +17,20 @@
 
   let showCount = false;
 
-  function handleStartChallenge(event: Event) {
+  
 
-    formData.name = event.target.name.value;
-    formData.phone = event.target.phone.value;
-    formData.email = event.target.email.value;
+  function handleStartChallenge() {
+
+    // formData.name = event.target.name.value;
+    // formData.phone = event.target.phone.value;
+    // formData.email = event.target.email.value;
 
     // setCookie("formData", JSON.stringify(formData));
-    localStorage.setItem("formData", JSON.stringify(formData));
+    // localStorage.setItem("formData", JSON.stringify(formData));
     
   // event.preventDefault();
+
+  
 
   if (formData.name === "" || formData.phone === "" || formData.email === "") {
     alert("Preencha todos os campos, por favor!");
